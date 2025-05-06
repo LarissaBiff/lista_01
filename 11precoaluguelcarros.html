@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    Problema: Preço do aluguel do carro
+    Peça para o usuário informar a quantidade de dias que o carro foi alugado e a quantidade de quilômetros rodados. Retorne o valor a ser pago de aluguel considerando que a diária do aluguel é de R$ 60,00 e cada Km rodado custa R$ 0,15.
+    */
+
+    //ENTRADA
+    const diasAluguel = Number(prompt(`Informe a quantidade de dias do aluguel:`));
+    const kmRodados = Number(prompt(`Informe a quantidade de kms rodados:`));
+    
+    //PROCESSAMENTO
+    const custoDiaria = diasAluguel * 60;
+    const custoKm = kmRodados * 0.15;
+    const totalAluguel = custoDiaria + custoKm;
+    
+    //SAÍDA
+    document.write(`O custo total do aluguel será de R$ ${totalAluguel.toFixed(2)}.`);
+    // logo após o nome da variável, para formatar a quantidade de casas decimais, utiliza-se a função toFixed(X), sendo que o X será substituído pela quantidade de casas decimais desejadas.
+    // Ou seja, totalAluguel.toFixed(2), que é a quantidade de casas decimais para a moeda.
+</script>

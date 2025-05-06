@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    Problema: Desconto no preço
+    Peça para o usuário informar o preço de um produto e também informar qual a porcentagem de desconto que será aplicado no preço do produto. Faça o cálculo do preço final do produto após aplicar a porcentagem de desconto e apresente o resultado.
+    */
+
+    //ENTRADA
+let preco = Number(prompt(`Qual é o preço do produto?`));
+    const desc = Number(prompt(`Qual é a porcentagem de desconto?`));
+    //PROCESSAMENTO
+const final = preco - (preco * desc / 100);
+    
+    //SAÍDA
+document.write(`O preço final do produto é: R$ ${final.toFixed(2)}.`);
+</script>

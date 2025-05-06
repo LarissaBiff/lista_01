@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    //Problema: Latas de tinta
+    //Peça para o usuário informar quantos metros quadrados deseja pintar. Apresente quantas latas de tinta são necessárias, considerando que um litro de tinta cobrirá 3 metros, e cada lata possui 18 litros de tinta.
+
+    //ENTRADA
+const mt = Number(prompt(`Quantos metros quadrados (m²) serão pintados?`));
+
+    //PROCESSAMENTO
+const mtporlata = 18 * 3;
+const latas = Math.ceil(mt / mtporlata);
+   
+    //SAÍDA
+document.write(`Será(ão) necessária(s) ${latas} lata(s).`);
+
+//Math.ceil (pra cima)
+//Math.floor (pra baixo)
+//Math.round (pro mais próximo)
+</script>
